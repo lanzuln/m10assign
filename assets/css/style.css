@@ -1,0 +1,380 @@
+/* ----google font  */
+@import url('https://fonts.googleapis.com/css2?family=family=Poppins:ital,wght@0,400;0,500;0,600;0,800;0,900;1,700&family=Roboto:wght@400;500&display=swap');
+
+/* font-family: 'Poppins', sans-serif;
+font-family: 'Roboto', sans-serif; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ======= common css */
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    color: #999999;
+    line-height: 1.8;
+}
+
+h2 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h2.section_title {
+    font-size: 55px;
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.sec_b_100 {
+    padding-bottom: 100px;
+}
+
+.sec_p {
+    padding: 100px 0px;
+}
+
+/* ======================header css */
+
+/* ================ hero area css  */
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-item:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: #333;
+    opacity: .4;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+button.carousel-control-prev,
+button.carousel-control-next {
+    display: none;
+}
+
+.carousel-caption {
+    top: 50%;
+    z-index: 1;
+    transform: translateY(-45%);
+}
+
+.carousel-caption {
+    line-height: initial;
+}
+
+.banner-text {
+    line-height: initial;
+}
+
+.carousel-caption h2 {
+    font-size: 50px;
+    margin-bottom: 17px;
+}
+
+.carousel-caption p {
+    font-size: 17px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+a.btn {
+    background: #CDB30C;
+    padding: 10px 25px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .3s;
+    border: none;
+}
+
+a.btn:hover {
+    background: #1F75FE !important;
+    color: #fff;
+}
+
+a.fill_btn {
+    background: #CDB30C;
+    padding: 15px 25px;
+    color: #fff;
+    display: inline-block;
+    border-radius: 30px;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all .3s;
+}
+
+a.fill_btn:hover {
+    background: #1F75FE;
+}
+
+/* =============about section  css ========== */
+
+.subtitle {
+    font-size: 15px;
+    color: #CDB30C;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+
+
+.about_content {
+    margin: 80px 0px 0px 30px;
+}
+
+.navbar.fixed-top {
+    background: #f8f8f8;
+    z-index: 15 !important;
+}
+
+.navbar.fixed-top a.navbar-brand {
+    color: #000;
+}
+
+.navbar.fixed-top a.nav-link {
+    color: #000;
+}
+
+.navbar.fixed-top a.nav-link:hover {
+    color: #CDB30C;
+}
+
+.navbar.fixed-top a.nav-link:active {
+    color: #CDB30C;
+}
+
+.about_hover_badge {
+    background: #CDB30C;
+    padding: 15px;
+    position: absolute;
+    right: -25%;
+    bottom: 60px;
+    display: flex;
+    color: #fff;
+    align-items: center;
+}
+
+.about_img {
+    position: relative;
+}
+
+.b_logo i {
+    color: #fff;
+    background: #000;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.b_content h1 {
+    font-size: 37px;
+    font-weight: 600;
+}
+
+.b_content h1 span {
+    font-size: 15px;
+    display: block;
+    font-weight: 400;
+}
+
+.section_heading.text-center {
+    margin-bottom: 50px;
+}
+
+
+
+.single_services {
+    height: 250px;
+    width: 100%;
+    padding: 30px 25px;
+    border-radius: 10px;
+    border: 1px solid #CDB30C;
+    transition: all .4s;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin-bottom: 30px;
+}
+
+.single_services.text-center:hover {
+    background: #CDB30C;
+}
+
+.single_services.text-center:hover .ser_img i {
+    background: #fff;
+    color: #CDB30C;
+}
+
+.single_services.text-center:hover .ser_content h3 {
+    color: #fff;
+}
+
+.ser_img i {
+    background: #cdb30c;
+    color: #fff;
+    font-size: 30px;
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+    line-height: 70px;
+    transition: all .4s;
+}
+
+.ser_img {
+    margin-bottom: 30px;
+}
+
+.ser_content h3 {
+    text-transform: capitalize;
+    font-size: 22px;
+    transition: all .4s;
+}
+
+/* =================== counter sec css======== */
+.counter_sec {
+    background: url(../img/counter_bg.jpg);
+    background-attachment: fixed !important;
+    padding: 80px 0px;
+    position: relative;
+    z-index: 1;
+
+}
+
+.bg_property {
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative;
+    z-index: 1;
+}
+
+.bg_property:after {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    content: " ";
+    background-color: #333;
+    opacity: .5;
+    z-index: -1;
+}
+
+.single_counter {
+    border: 1px solid #fff;
+    padding: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.single_counter i {
+    color: #CDB30C;
+    font-size: 30px;
+}
+
+
+
+span.timer {
+    color: #fff;
+    font-weight: 600;
+    font-size: 50px;
+    padding: 15px 0px;
+    line-height: 1.2;
+}
+
+p.counter-title {
+    color: #fff;
+    font-size: 18px;
+}
+
+/* =================progress  */
+.progress,
+.progress-stacked {
+    margin-bottom: 20px;
+    height: 30px;
+    border-radius: 30px;
+    --bs-progress-bar-bg: #CDB30C;
+}
+
+/* ============== testiminial css  */
+.fw-bold {
+    color: #000;
+}
+
+.testi_dec {
+    margin-bottom: 20px;
+}
+
+/* ==========single page  */
+.single_page_banner {
+    background: url(../img/single_p_bg.jpg);
+}
+
+section.single_page_banner {
+    padding: 250px 0px 50px 0px;
+}
+
+
+span.separator {
+    color: #CDB30C;
+}
+
+span.main,
+span.curentpage {
+    color: #fff;
+}
